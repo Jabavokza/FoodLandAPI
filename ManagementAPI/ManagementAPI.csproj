@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E89B0043-F5F1-416B-A862-21D02D16B6D2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ManagementAPI</RootNamespace>
+    <AssemblyName>ManagementAPI</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ChoETL, Version=1.0.8.4, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ChoETL.1.0.8.4\lib\ChoETL.dll</HintPath>
+    </Reference>
+    <Reference Include="ChoETL.JSON, Version=1.0.5.7, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ChoETL.JSON.1.0.5.7\lib\ChoETL.JSON.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroFramework.RunTime.1.2.0.3\lib\net40-Client\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroFramework.Design.1.2.0.3\lib\net40\MetroFramework.Design.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroFramework.Fonts.1.2.0.3\lib\net40\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ST-Class\cCNVB.cs" />
+    <Compile Include="X-Class\cFoodLandCallAPI.cs" />
+    <Compile Include="wConfigDB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="wConfigDB.Designer.cs">
+      <DependentUpon>wConfigDB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="From\wDetailCoupon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="From\wDetailCoupon.Designer.cs">
+      <DependentUpon>wDetailCoupon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="From\wLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="From\wLogin.Designer.cs">
+      <DependentUpon>wLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="From\wMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="From\wMain.Designer.cs">
+      <DependentUpon>wMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="From\wProgressDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="From\wProgressDlg.Designer.cs">
+      <DependentUpon>wProgressDlg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="From\wSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="From\wSetting.Designer.cs">
+      <DependentUpon>wSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modale\cmlCpnUseStaUpd.cs" />
+    <Compile Include="Modale\cmlConnectDB.cs" />
+    <Compile Include="Modale\cmlCouponCode.cs" />
+    <Compile Include="Modale\cmlCouponReq.cs" />
+    <Compile Include="Modale\cmlCouponRes.cs" />
+    <Compile Include="Modale\cmlCpnData.cs" />
+    <Compile Include="Modale\cmlCpnSearchReq.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ST-Class\cCNMS.cs" />
+    <Compile Include="ST-Class\cCNSP.cs" />
+    <Compile Include="wMainPrototype.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="wMainPrototype.Designer.cs">
+      <DependentUpon>wMainPrototype.cs</DependentUpon>
+    </Compile>
+    <Compile Include="X-Class\cSetting.cs" />
+    <EmbeddedResource Include="wConfigDB.resx">
+      <DependentUpon>wConfigDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="From\wDetailCoupon.resx">
+      <DependentUpon>wDetailCoupon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="From\wLogin.resx">
+      <DependentUpon>wLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="From\wMain.resx">
+      <DependentUpon>wMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="From\wProgressDlg.resx">
+      <DependentUpon>wProgressDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="From\wSetting.resx">
+      <DependentUpon>wSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="wMainPrototype.resx">
+      <DependentUpon>wMainPrototype.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MetroFramework.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

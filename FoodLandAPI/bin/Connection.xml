@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ConfigDB>
+  <DbLocation>ADAAMORN\SQLEXPRESS</DbLocation>
+  <DbName>MEMBERHQ</DbName>
+  <User>sa</User>
+  <Password>P@ssw0rd</Password>
+</ConfigDB>

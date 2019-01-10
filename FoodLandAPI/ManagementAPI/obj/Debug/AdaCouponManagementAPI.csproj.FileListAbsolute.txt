@@ -18,3 +18,4 @@ D:\Project\2018\FoodLandAPI\FoodLandAPI\ManagementAPI\bin\Debug\AdaFLCouponManag
 D:\Project\2018\FoodLandAPI\FoodLandAPI\ManagementAPI\obj\Debug\AdaFLCouponManagementAPI.Properties.Resources.resources
 D:\Project\2018\FoodLandAPI\FoodLandAPI\ManagementAPI\obj\Debug\AdaFLCouponManagementAPI.exe
 D:\Project\2018\FoodLandAPI\FoodLandAPI\ManagementAPI\obj\Debug\AdaFLCouponManagementAPI.pdb
+D:\Project\2018\FoodLandAPI\FoodLandAPI\ManagementAPI\obj\Debug\AdaCouponManagementAPI.csprojAssemblyReference.cache

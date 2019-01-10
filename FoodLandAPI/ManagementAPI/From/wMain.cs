@@ -35,7 +35,7 @@ namespace ManagementAPI.From
             }
             catch (Exception oEx)
             {
-                throw oEx;
+               // throw oEx;
             }
         }
         private void ocmLogin_Click(object sender, EventArgs e)
